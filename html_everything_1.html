@@ -44,8 +44,17 @@
 		<!--If you move the mouse over the paragraph above, the title will display as a tooltip.-->
 		<p title="Paragraph 2"> ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789/*-+.!@#$%^&*()_+={}[];':"/?,<></p>
 
+		<!--
+			target attribute specifies where to open the linked document
 
-		<a href="http://www.google.com">Click Here for Google</a>
+			Target Value 	Description
+			_blank 	Opens the linked document in a new window or tab
+			_self 	Opens the linked document in the same frame as it was clicked (this is default)
+			_parent 	Opens the linked document in the parent frame
+			_top 	Opens the linked document in the full body of the window
+			framename 	Opens the linked document in a named frame
+		-->
+		<a href="http://www.google.com" target="_blank">Click Here for Google</a>
 		
 		<!-- 
 			<br> Line Break
@@ -56,6 +65,8 @@
 
 		<!--
 			<img src=""> Image
+
+			size in pixels
 		-->
 		<img src="A1.jpg" alt="There should be an image here." > 
 		<img src="1.gif" alt="Animated Gif" width="100" height="100"> 
@@ -198,7 +209,7 @@
 
 		-->
 				
-		<p style="background-color:lightgrey">
+		<p id="bookmark1" style="background-color:lightgrey">
 			Goa is a state located in the western region of <span style="color:red">India</span>, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is <span style="font-family:verdana">India's smallest state by area and the fourth smallest by population.</span> <span style="color: #0000ff;">Goa is one of India's richest states</span> with a GDP per capita two and a half times that of the country as a whole. It was ranked the <span style="font-family:courier; font-size:200%">best placed state by the Eleventh Finance Commission</span> for its infrastructure and ranked on top for the best quality of life in India by the National Commission on Population based on the 12 Indicators.
 		</p>
 
