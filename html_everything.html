@@ -7,6 +7,7 @@
 	attribute_value to be enclosed in double qoutes "" (or single quotes-use it when the attribute_value contains "" or vice versa) if the value includes a white space.
 	Tags can be nested within other tags.
 	Any number of spaces, and any number of new lines, count as only one space but white space in between tags is ignored.
+	Every HTML element has a default style (background color is white and text color is black).
 -->
 
 <!--Always start by specifying the type of document for a markup language-->
@@ -14,7 +15,6 @@
 <!--HTML tag specifing language as US English-->
 <html lang="en-US">
 	<head>
-			<!---->
 			<!--Displayed in the browser tab-->
 			<title>HTML e</title>
 			<!--One of the Meta Data Tags-->
@@ -81,8 +81,48 @@
 			Oh, bring back my Bonnie to me.
 		</pre>
 
-		
+		<!--
+			Style Atribute
+			style="css_property:css_value" 
+			#000000	8 bit Red-Green-Blue(RGB) values of a Color
+		-->
+
+		<!--
+			<b></b> Bold
+			<i></i> Italics
+			<u></u> Underlined
+			<em></em> Emphasized text
+			<strong></strong> Strong text
+
+			The <span></span> tag is used to group inline-elements in a document.
+		-->
+				
+		<p style="background-color:lightgrey">
+			<b>Goa</b> is a <u>state</u> located in the <i>western region</i> of <span style="color:red">India</span>, it is bounded by the state of <strong>Maharashtra</strong> to the north, and by <em>Karnataka</em> to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. <span style="color: #0000ff">Goa is one of India's richest states</span> with a GDP per capita two and a half times that of the country as a whole. It was ranked the best placed state by the Eleventh Finance Commission for its infrastructure and ranked on top for the best quality of life in India by the National Commission on Population based on the 12 Indicators.
+		</p>
+
+		<!--
+			&lt for inserting < within a tag
+
+			<code></code> Defines a piece of computer code
+			<samp></samp> Defines sample output from a computer program
+			<kbd></kbd> Defines keyboard input
+			<var></var> Defines a variable
+		-->
+		<code>
+			#include&lt;stdio.h><br>
+			void main()<br>
+			{<br>
+				printf("Hello World!");<br>
+			}
+		</code>
+		<br>
+
+		<samp>Hello World!</samp><br>
+		<kbd>Keyboard input</kbd><br>
+		<var>Variable</var>
 
 	</body>
 </html> 
-
+<!---->
+<!--End Of File-->
