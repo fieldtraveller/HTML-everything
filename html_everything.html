@@ -1,5 +1,6 @@
 <!--Comment-->
 <!--Hyper Text Transfer Protocol-->
+<!--http://www.w3schools.com-->
 <!--
 	
 	<tagname attribute_name=attribute_value>element</tagname>
@@ -15,9 +16,13 @@
 <!--HTML tag specifing language as US English-->
 <html lang="en-US">
 	<head>
-			<!--Displayed in the browser tab-->
+			<!--
+				<title></title> Displayed in the browser tab
+			-->
 			<title>HTML e</title>
-			<!--One of the Meta Data Tags-->
+			<!--
+				<meta> One of the Meta Data Tags
+			-->
 			<meta charset="UTF-8">
 	</head>
 	
@@ -31,7 +36,9 @@
 		<h5>h5</h5>
 		<h6>h6</h6>
 		
-		<!--Paragraph-->
+		<!--
+			<p></p> Paragraph
+		-->
 		<p>Paragraph 1. ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789/*-+.!@#$%^&*()_+={}[];':"/?,<></p>
 		<!--Paragraph with title-->
 		<!--If you move the mouse over the paragraph above, the title will display as a tooltip.-->
@@ -40,30 +47,36 @@
 
 		<a href="http://www.google.com">Click Here for Google</a>
 		
-		<!-- Line Break-->
+		<!-- 
+			<br> Line Break
+		-->
 		<br>
 		<!-- Line Break tag closed in the opening tag-->
 		<br/>
 
-		<!--Image-->
+		<!--
+			<img src=""> Image
+		-->
 		<img src="A1.jpg" alt="There should be an image here." > 
 		<img src="1.gif" alt="Animated Gif" width="100" height="100"> 
 		<br>
 
 		Line 1.
-		<!--Draws a Horizontal line across the Browser-->
+		<!--
+			<hr> Draws a Horizontal line across the Browser
+		-->
 		<hr>
 		Line 2.
 		<br>
 
-		<!--*****************************************************************************************************************************************************-->
+		<!--****************************************************************************************************************************************************-->
 		<!--Difference between Line Break and Paragraph-->
-		<!--*****************************************************************************************************************************************************-->
+		<!--****************************************************************************************************************************************************-->
 		<p>
 			A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. <br>Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.
 		</p>
 
-		<!--*****************************************************************************************************************************************************-->
+		<!--****************************************************************************************************************************************************-->
 		<p>
 			A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
 		</p>
@@ -71,9 +84,11 @@
 		<p>
 			Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.
 		</p>
-		<!--*****************************************************************************************************************************************************-->
+		<!--****************************************************************************************************************************************************-->
 		
-		<!--Pre-Formatted Text-->
+		<!--
+			<pre></pre> Pre-Formatted Text
+		-->
 		 <pre>
 		 	My Bonnie lies over the ocean.
 			My Bonnie lies over the sea.
@@ -82,33 +97,47 @@
 		</pre>
 
 		<!--
-			Style Atribute
-			style="css_property:css_value" 
-			#000000	8 bit Red-Green-Blue(RGB) values of a Color
-		-->
-
-		<!--
 			<b></b> Bold
-			<i></i> Italics
 			<u></u> Underlined
-			<em></em> Emphasized text
-			<strong></strong> Strong text
+			
+			<i></i> Italics-a part of text in an alternate voice or mood.
+			<em></em> Emphasized text- Renders as emphasized text
+			<strong></strong> Strong text-Defines important text
+			<mark></mark> marked/highlighted text
+			<cite></cite> the title of a work
+			<dfn></dfn> a definition term
 
-			The <span></span> tag is used to group inline-elements in a document.
-		-->
-				
-		<p style="background-color:lightgrey">
-			<b>Goa</b> is a <u>state</u> located in the <i>western region</i> of <span style="color:red">India</span>, it is bounded by the state of <strong>Maharashtra</strong> to the north, and by <em>Karnataka</em> to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. <span style="color: #0000ff">Goa is one of India's richest states</span> with a GDP per capita two and a half times that of the country as a whole. It was ranked the best placed state by the Eleventh Finance Commission for its infrastructure and ranked on top for the best quality of life in India by the National Commission on Population based on the 12 Indicators.
-		</p>
-
-		<!--
-			&lt for inserting < within a tag
-
+			<small></small> smaller text
+			<del></del> text with a deleted part
+			<ins></ins> text with ainserted part
+			<sub></sub> Subscript
+			<sup></sup> Superscript
+			
 			<code></code> Defines a piece of computer code
 			<samp></samp> Defines sample output from a computer program
 			<kbd></kbd> Defines keyboard input
 			<var></var> Defines a variable
+
+			&lt; for inserting < within a tag
 		-->
+
+		<b>Bold</b><br>
+		<u>Underlined</u><br>
+		
+		<i>Italics</i><br>
+		<em>Emphasized Text</em><br>
+		<strong>Strong Text</strong><br>
+		<mark>Marked</mark><br>
+		<cite>Cited</cite><br>
+		<dfn>Definition</dfn><br>
+
+		<small>smaller text</small><br>
+		<del>Deleted</del><br>
+		<ins>Inserted</ins><br>
+		This is <sub>Subscripted</sub> Text.<br>
+		This is <sup>Superscripted</sup> Text.<br>
+
+		<br>
 		<code>
 			#include&lt;stdio.h><br>
 			void main()<br>
@@ -116,11 +145,65 @@
 				printf("Hello World!");<br>
 			}
 		</code>
-		<br>
+		<br><br>
 
 		<samp>Hello World!</samp><br>
 		<kbd>Keyboard input</kbd><br>
-		<var>Variable</var>
+		<var>Variable</var><br><br>
+
+		<!--
+			<q></q> Short Quotes
+			<blockquote></blockquote> Block Quotation
+
+			<abbr></abbr> Abbrevation
+			<address></address> address
+
+			<bdo></bdo> Bi-Directional Override
+
+		-->
+
+		According to Charlton Fernandes:<q>This the best HTML tutorial.</q><br>
+		According to Charlton Fernandes:<blockquote>This the best HTML tutorial.</blockquote><br><br>
+
+		<!--Abbrevation show as a tooltip if the Mouse hovers over the text-->
+		Abbrevation: <abbr title="Bipolar Junction Transistor">BJT</abbr><br>
+
+		<br>
+		Address:
+		<address>
+			Betalbatim, 
+			Goa, India.
+			403713.
+		</address><br>
+
+		<bdo dir="ltr">This texr will go left-to-right.</bdo><br>
+		<bdo dir="rtl">This text will go right-to-left.</bdo><br>
+
+
+		
+		<!--
+			Style Atribute
+			style="css_property:css_value" 
+			#000000	8 bit Red-Green-Blue(RGB) values of a Color
+
+			The <span></span> tag is used to group inline-elements in a document.
+
+		    Use the style attribute for styling HTML elements
+		    Use background-color for background color
+		    Use color for text colors
+		    Use font-family for text fonts
+		    Use font-size for text sizes
+		    Use text-align for text alignment
+
+		-->
+				
+		<p style="background-color:lightgrey">
+			Goa is a state located in the western region of <span style="color:red">India</span>, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is <span style="font-family:verdana">India's smallest state by area and the fourth smallest by population.</span> <span style="color: #0000ff">Goa is one of India's richest states</span> with a GDP per capita two and a half times that of the country as a whole. It was ranked the <span style="font-family:courier; font-size:200%">best placed state by the Eleventh Finance Commission</span> for its infrastructure and ranked on top for the best quality of life in India by the National Commission on Population based on the 12 Indicators.
+		</p>
+
+		<p style="text-align:center"> Center Aligned</p>
+
+
 
 	</body>
 </html> 
