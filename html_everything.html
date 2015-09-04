@@ -6,6 +6,7 @@
 	There can be more then 1 attributes.
 	attribute_value to be enclosed in double qoutes "" (or single quotes-use it when the attribute_value contains "" or vice versa) if the value includes a white space.
 	Tags can be nested within other tags.
+	Any number of spaces, and any number of new lines, count as only one space but white space in between tags is ignored.
 -->
 
 <!--Always start by specifying the type of document for a markup language-->
@@ -13,7 +14,11 @@
 <!--HTML tag specifing language as US English-->
 <html lang="en-US">
 	<head>
+			<!---->
+			<!--Displayed in the browser tab-->
 			<title>HTML e</title>
+			<!--One of the Meta Data Tags-->
+			<meta charset="UTF-8">
 	</head>
 	
 	<body>
@@ -43,7 +48,40 @@
 		<!--Image-->
 		<img src="A1.jpg" alt="There should be an image here." > 
 		<img src="1.gif" alt="Animated Gif" width="100" height="100"> 
-		<br/>
+		<br>
+
+		Line 1.
+		<!--Draws a Horizontal line across the Browser-->
+		<hr>
+		Line 2.
+		<br>
+
+		<!--*****************************************************************************************************************************************************-->
+		<!--Difference between Line Break and Paragraph-->
+		<!--*****************************************************************************************************************************************************-->
+		<p>
+			A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose. <br>Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.
+		</p>
+
+		<!--*****************************************************************************************************************************************************-->
+		<p>
+			A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
+		</p>
+
+		<p>
+			Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.
+		</p>
+		<!--*****************************************************************************************************************************************************-->
+		
+		<!--Pre-Formatted Text-->
+		 <pre>
+		 	My Bonnie lies over the ocean.
+			My Bonnie lies over the sea.
+			My Bonnie lies over the ocean.
+			Oh, bring back my Bonnie to me.
+		</pre>
+
+		
 
 	</body>
 </html> 
