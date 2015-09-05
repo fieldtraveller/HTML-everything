@@ -3,9 +3,28 @@
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
+			<!--
+				<meta http-equiv="content-type|default-style|refresh">
+
+				<meta name="value" content="">
+				Value 				Description
+				application-name 	Specifies the name of the Web application that the page represents
+				author 				Specifies the name of the author of the document.
+				description 		Specifies a description of the page. Search engines can pick up this description to show with the results of searches.
+				generator		 	Specifies one of the software packages used to generate the document (not used on hand-authored pages)
+				keywords 			Specifies a comma-separated list of keywords - relevant to the page (Informs search engines what the page is about).
+
+				<base> specifies the base URL and base target for all relative URLs in a page
+				<base href="base URL" target="_blank">
+			-->
+
 			<title>HTML e5</title>
 			<meta charset="UTF-8">
-
+			<meta name="author" content="FieldTraveller">
+			<!--Refresh Page every 3 seconds-->
+			<!--
+			<meta http-equiv="refresh" content="3">
+			-->
 			<style type="text/css">
 
 			body
@@ -30,9 +49,9 @@
 			<iframe src=""></iframe> display a web page within a web page.
 			
 		-->
-		<iframe src="file:///C:/Users/Alex/Documents/HTML%20everything/html_everything_2.html" width="1000" height="1000" name="iframe_1"></iframe>
+		<iframe src="./html_everything_2.html" width="1000" height="1000" name="iframe_1"></iframe>
 		<!--Load a link in an iframe-->
-		<p><a href="file:///C:/Users/Alex/Documents/HTML%20everythinghtml_everything_1.html" target="iframe_1">This is where it began</a></p>
+		<p><a href="./html_everything_1.html" target="iframe_1">This is where it began</a></p>
 
 		<nav>
 			Goa<br>
