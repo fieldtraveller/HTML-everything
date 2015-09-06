@@ -1,86 +1,150 @@
-<!--HTML Layout using dedicated tags-->
-<!--http://www.w3schools.com-->
+<!-- Tables and List -->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-			<title>HTML e4</title>
-			<meta charset="UTF-8">
+		<title>HTML e4</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="FieldTraveller">
+		<meta name="application-name" content="html_everything">
+		<meta name="description" content="HTML Quick Reference">
+		<meta name="keywords" content="HTML, Quick Reference">
 
-			 <style>
-
-			 	body
-			 	{
-			 		margin: 2%;
-			 	}
-
-				header 
+		<style type="text/css">
+			table, th, td 
 				{
-				    background-color:green;
-				    color:lightblue;
-				    text-align:center;
-				    padding:5px;
-
-				    border: 5px solid red
+				    border: 1px solid black;
+				    border-collapse: collapse;
+				}
+				table#t01 tr:nth-child(even) 
+				{
+				    color: red;
 				}
 				
-				nav 
+				table#t01 tr:nth-child(odd) 
 				{
-				    line-height:30px;
-				    background-color:#eeeeee;
-				    height:80%;
-				    width:16%;
-				    float:left;
-				    padding:5px;
-
+				    color: green;
 				}
-				
-				section 
+				table#t01 tr:nth-child(3) 
 				{
-				    width:80%;
-				    float:left;
-				    padding:10px;
-
-
+				    color: orange;
 				}
-				
-				footer 
-				{
-				    background-color:green;
-				    color:lightblue;
-				    clear:both;
-				    text-align:center;
-				    padding:5px;
 
-				    border: 5px solid red
-				}
-				</style> 
+		</style>
 
 	</head>
-	
-	<body>		
-		
-		<header>
-			<h1>Goa</h1>
-		</header>
 
-		<nav>
-			Goa<br/>
-			Diu<br/>
-			Daman<br/>
-		</nav>
+		<!--
+			<table></table> Table
+			<th></th> Header cell in a table
+			<tr></tr> Row in a table
+			<td></td> Cell in a table
+			<caption></caption> Table caption
+			<thead></thead> Header (Groups the header content in a table)
+			<tbody></tbody> Body (Groups the body content in a table)
+			<tfoot></tfoot> Footer (Groups the footer content in a table )
 
-		<section>
-			<p>
-				Goa is a state located in the western region of India, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. Goa is one of India's richest sstates with a GDP per capita two and a half times that of the country as a whole. 
-			</p>
-		</section>
+			<colgroup></colgroup> Column Group (Group of one or more columns in a table for formatting)
+			The <colgroup> tag must be a child of a <table> element, after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.
+			<col> 	Specifies column properties for each column within a <colgroup> element
+			span attribute 	(Specifies the number of columns a column group should span)
 
-		<footer>
-			<p>	
-				Text Copied From Wikipedia.
-			</p>
-		</footer>
-		
+			colspan attribute column span (merge columns)
+			rowspan attribute row span (merge rows)
+		-->
+
+		<table id="t01" style="width:100%">
+			<caption>Table</caption>
+
+			<colgroup>
+			    <col span="2" style="background-color:lightblue" />
+			    <col style="background-color:yellow" />
+		  	</colgroup>
+
+		  	<thead>
+			  	<tr>
+			  		<th>Sr. No.</th>
+				    <th>Firstname</th>
+				    <th>Lastname</th>
+				    <th>Age</th>
+			  	</tr>
+		  	</thead>
+
+		  	<tbody>
+			  	<tr>
+			  		<td>1</td>
+				    <td>Micheal</td>
+				    <td>Jackson</td>
+				    <td>50</td>
+			  	</tr>
+
+			  	<tr>
+			  		<td>2</td>
+				    <td>Albert</td>
+				    <td>Einstien</td>
+				    <td>68</td>
+			  	</tr>
+
+			  	<tr>
+			  		<td>3</td>
+				    <td>Marie</td>
+				    <td>Curie</td>
+				    <td>45</td>
+			  	</tr>
+		  	</tbody>
+
+		  	<tfoot>
+		  		<tr>
+		  			<td colspan="4">1234</td>
+		  		</tr>
+		  	</tfoot>
+
+		</table> <br/>
+
+		<!--
+			<ul></ul> unordered list-bullets
+			<li></li> list item
+
+			list-style-type:circle	specifies bullet style
+							disc
+							aquare
+							none
+			
+			<ol></ol> ordered list-numbering
+			type="1" 	The list items will be numbered with numbers (default)
+			type="A" 	The list items will be numbered with uppercase letters
+			type="a" 	The list items will be numbered with lowercase letters
+			type="I" 	The list items will be numbered with uppercase roman numbers
+			type="i" 	The list items will be numbered with lowercase roman numbers
+
+			<dl></dl> A description list is a list of terms, with a description of each term.
+			<dt></dt> term to be described
+			<dd></dd> term description
+		-->
+		Un-Ordered List
+		<ul style="list-style-type:circle">
+			<li>Coffee</li>
+		  	<li>Tea</li>
+		  	<li>Milk</li>
+		</ul><br/>
+
+		Ordered List
+		<ol type="A">
+			<li>Coffee</li>
+		  	<li>Tea</li>
+		  	<li>Milk</li>
+		</ol><br/>
+
+		Description list
+		<dl>
+			<dt>Water</dt>
+				<dd>Hydrogen + Water</dd>
+
+			<dt>Hydrochloric Acid</dt>
+				<dd>Hydrogen + Chlorine</dd>
+		</dl><br/>
+
+	<body>
+
 	</body>
 </html> 
 <!---->

@@ -1,76 +1,88 @@
-<!---->
+<!--HTML Semantic Layout using ID-->
 <!--http://www.w3schools.com-->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-			<!--
-				<meta http-equiv="content-type|default-style|refresh">
+		<title>HTML e5</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="FieldTraveller">
+		<meta name="application-name" content="html_everything">
+		<meta name="description" content="HTML Quick Reference">
+		<meta name="keywords" content="HTML, Quick Reference">
 
-				<meta name="value" content="">
-				Value 				Description
-				application-name 	Specifies the name of the Web application that the page represents
-				author 				Specifies the name of the author of the document.
-				description 		Specifies a description of the page. Search engines can pick up this description to show with the results of searches.
-				generator		 	Specifies one of the software packages used to generate the document (not used on hand-authored pages)
-				keywords 			Specifies a comma-separated list of keywords - relevant to the page (Informs search engines what the page is about).
+		<style>
+		 	body
+		 	{
+		 		margin: 2%;
+		 	}
 
-				<base> specifies the base URL and base target for all relative URLs in a page
-				<base href="base URL" target="_blank">
-			-->
-
-			<title>HTML e5</title>
-			<meta charset="UTF-8">
-			<meta name="author" content="FieldTraveller">
-			<!--Refresh Page every 3 seconds-->
-			<!--
-			<meta http-equiv="refresh" content="3">
-			-->
-			<style type="text/css">
-
-			body
+			#header 
 			{
-				/*Add image as background.*/
-				/*
-				background-image: url("1.gif");
-				*/
+			    background-color:black;
+			    color:white;
+			    text-align:center;
+			    padding:5px;
+
+			    border: 5px solid red;
+			}
+				
+			#nav 
+			{
+			    line-height:30px;
+			    background-color:#eeeeee;
+			    height:80%;
+			    width:16%;
+			    float:left;
+			    padding:5px;
+
+			}
+				
+			#section 
+			{
+			    width:80%;
+			    float:left;
+			    padding:10px;
+
+			}
+				
+			#footer 
+			{
+			    background-color:black;
+			    color:white;
+			    clear:both;
+			    text-align:center;
+			    padding:5px;
+			    border: 5px solid red;
 			}
 
-			</style>
+		</style> 
 
 	</head>
 	
 	<body>		
 		
-		<header>
+		<div id="header">
 			<h1>Goa</h1>
-		</header>
+		</div>
 
-		<!--
-			<iframe src=""></iframe> display a web page within a web page.
-			
-		-->
-		<iframe src="./html_everything_2.html" width="1000" height="1000" name="iframe_1"></iframe>
-		<!--Load a link in an iframe-->
-		<p><a href="./html_everything_1.html" target="iframe_1">This is where it began</a></p>
-
-		<nav>
+		<div id="nav">
 			Goa<br/>
 			Diu<br/>
 			Daman<br/>
-		</nav>
+		</div>
 
-		<section>
-			<p>
+		<div id="section">
+			<p> 
 				Goa is a state located in the western region of India, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. Goa is one of India's richest sstates with a GDP per capita two and a half times that of the country as a whole. 
 			</p>
-		</section>
+		</div>
 
-		<footer>
+		<div id="footer">
 			<p>	
 				Text Copied From Wikipedia.
 			</p>
-		</footer>
-		
+		</div>
+
 	</body>
 </html> 
 <!---->

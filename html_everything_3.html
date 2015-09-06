@@ -1,84 +1,132 @@
-<!--HTML Layout using ID-->
+<!--Styling-->
 <!--http://www.w3schools.com-->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-			<title>HTML e3</title>
-			<meta charset="UTF-8">
+		<title>HTML e3</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="FieldTraveller">
+		<meta name="application-name" content="html_everything">
+		<meta name="description" content="HTML Quick Reference">
+		<meta name="keywords" content="HTML, Quick Reference">
 
-			 <style>
+	</head>
 
-			 	body
-			 	{
-			 		margin: 2%;
-			 	}
+			<!--Internal Styling-->
+			<!--
+				<style type="text/css"></style> Style (define style for different elements)
+				
+				element.class 
+				element#id
 
-				#header 
+				Atributes
+				background(background-color)	background color
+				color 							text colors
+				font-family 					text fonts
+				font-size  						text sizes
+				border 							visible element borders
+				padding 						space inside the border
+				margin 							space outside the border
+
+				px pixels
+			-->
+			
+			<style type="text/css">
+
+				/*Comment With CSS/style*/
+				body 
 				{
-				    background-color:black;
-				    color:white;
-				    text-align:center;
-				    padding:5px;
+					background-color:lightgreen;
+				}
 
-				    border: 5px solid red
+				h1 
+				{
+					color:blue;
+			    	font-family:verdana;
+			    	font-size:300%;
 				}
 				
-				#nav 
+				p  
 				{
-				    line-height:30px;
-				    background-color:#eeeeee;
-				    height:80%;
-				    width:16%;
-				    float:left;
-				    padding:5px;
+			    	color:red;
+			    	font-family:courier;
+			    	font-size:160%;
 
+			    	border:1px solid black;
+    				padding:10px;
+    				margin:30px;
+
+				}
+
+				/*element#id to define an unique style for an element with specific id*/
+				p#p02
+				{
+					color:purple;
+			    	font-family:console;
+			    	font-size:50%;
+				}
+
+				/*element.class to define an unique style for an element belonging to a specific class*/
+				p.one
+				{
+					background: yellow
+				}
+
+				div
+				{
+					background: red;
+				}
+
+				/*element1 element2 ... elementn where element 2 is nested within element 1 and so on*/
+				div p
+				{
+					border:0;
+				}
+
+				div:hover
+				{
+					background: white;
 				}
 				
-				#section 
-				{
-				    width:80%;
-				    float:left;
-				    padding:10px;
+			</style>
 
-
-				}
-				
-				#footer 
-				{
-				    background-color:black;
-				    color:white;
-				    clear:both;
-				    text-align:center;
-				    padding:5px;
-
-				    border: 5px solid red
-				}
-				</style> 
+			<!--External Styling-->
+			<!--
+				<link> link (Used to load external resource)
+				rel attribute (specifies the relationship between the current document and the linked document)
+			-->
+			<link rel="stylesheet" type="text/css" href="theme1.css">
 
 	</head>
 	
 	<body>		
 		
-		<div id="header">
 		<h1>Goa</h1>
-		</div>
 
-		<div id="nav">
-			Goa<br/>
-			Diu<br/>
-			Daman<br/>
-		</div>
-
-		<div id="section">
-		<p> 
-			Goa is a state located in the western region of India, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. Goa is one of India's richest sstates with a GDP per capita two and a half times that of the country as a whole. 
+		<!--
+			id attribute (uniquely identifies an element)
+			class attribute (used to define a different style for all elements with the specified class)
+		-->
+		<p id="p01" class="one"> 
+			Goa is a state located in the western region of India, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. Goa is one of India's richest states with a GDP per capita two and a half times that of the country as a whole. 
 		</p>
-		</div>
 
-		<div id="footer">
-		<p>	
-			Text Copied From Wikipedia.
+		<p id="p02" class="two">	
+			It was ranked the best placed state by the Eleventh Finance Commission for its infrastructure and ranked on top for the best quality of life in India by the National Commission on Population based on the 12 Indicators.
 		</p>
+
+		<a href="https://www.google.com/" target="_blank">Click me</a>
+		<br/>
+
+		<!--
+			<div></div>  block-level element (used as a container for other HTML elements)
+		-->
+
+		<div>
+			<h1>Hover Over Me.</h1>
+			<p>
+				Magic!
+			</p>
 		</div>
 
 	</body>

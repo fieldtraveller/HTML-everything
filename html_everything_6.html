@@ -1,134 +1,98 @@
-<!---->
-<!--Forms-->
+<!--HTML Semantic Layout using dedicated tags-->
 <!--http://www.w3schools.com-->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-			<title>HTML e6</title>
-			<meta charset="UTF-8">
+		<title>HTML e6</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="FieldTraveller">
+		<meta name="application-name" content="html_everything">
+		<meta name="description" content="HTML Quick Reference">
+		<meta name="keywords" content="HTML, Quick Reference">
+
+		<style>
+		 	body
+		 	{
+		 		margin: 2%;
+		 	}
+
+			header 
+			{
+			    background-color:green;
+			    color:lightblue;
+			    text-align:center;
+			    padding:5px;
+
+			    border: 5px solid red;
+			}
+				
+			nav 
+			{
+			    line-height:30px;
+			    background-color:#eeeeee;
+			    height:80%;
+			    width:16%;
+			    float:left;
+			    padding:5px;
+
+			}
+				
+			section 
+			{
+			    width:80%;
+			    float:left;
+			    padding:10px;
+
+			}
+				
+			footer 
+			{
+			    background-color:green;
+			    color:lightblue;
+			    clear:both;
+			    text-align:center;
+			    padding:5px;
+			    border: 5px solid red;
+			}
+
+		</style> 
 
 	</head>
 	
 	<body>
 
-		<!--
-			<form></form> defines an HTML form
-			action attribute Specifies where to send the form-data when a form is submitted
-			method Specifies the HTTP method to use when sending form-data (Deflaut get)
+	<!--
+		<header></header> Header (header for a document or section)
+		<nav></nav> Navigation pane
+		<section></section> Section (block of related elements)
+		<article></article> Article (a complete, self-contained block of related elements)
+		<footer></footer> Footer
+	-->		
+		
+		<header>
+			<h1>Goa</h1>
+		</header>
 
-			<fieldset></fieldset> used to group related elements in a form
-			<legend></legend> defines a caption for the <fieldset></fieldset>
+		<nav>
+			Goa<br/>
+			Diu<br/>
+			Daman<br/>
+		</nav>
 
-			<input> specifies an input field where the user can enter data
-			<label></label> defines a label for an <input></input>
-			<datalist></datalist> specifies a list of pre-defined options for an <input> element. Double Click to get a drop-down list of pre-defined options 
-			   type button 		attribute used to specify the type of input
-					checkbox
-					color
-					date
-					datetime
-					datetime-local
-					email
-					file
-					hidden
-					image
-					month
-					number
-					password
-					radio
-					range
-					reset
-					search
-					submit
-					tel
-					text
-					time
-					url
-					week 
+		<section>
+			<article>
+				<p>
+					Goa is a state located in the western region of India, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. Goa is one of India's richest sstates with a GDP per capita two and a half times that of the country as a whole. 
+				</p>
+			</article>
+		</section>
 
-			Attribute 	Description
-			disabled 	Specifies that an input field should be disabled
-			max 		Specifies the maximum value for an input field
-			maxlength 	Specifies the maximum number of character for an input field
-			min 		Specifies the minimum value for an input field
-			pattern 	Specifies a regular expression to check the input value against
-			readonly 	Specifies that an input field is read only (cannot be changed)
-			required 	Specifies that an input field is required (must be filled out)
-			size 		Specifies the width (in characters) of an input field
-			step 		Specifies the legal number intervals for an input field
-			value 		Specifies the default value for an input field
-			
-			<select></select> defines a drop-down list
-			<option></option> defines the options to select.
-			<optgroup></optgroup> to group related options in a drop-down list
-
-			<textarea></textarea> defines a multi-line text input control
-			<button></button> defines a clickable button
-
-			<keygen> The <keygen> element specifies a key-pair generator field in a form.
-			When the form is submitted, two keys are generated, one private and one public.
-			The private key is stored locally, and the public key is sent to the server.
-			The public key could be used to generate a client certificate to authenticate the user in the future.
-
-			<output></output> represents the result of a calculation 
-		-->
-
-		 <form action="action_page.php" oninput="x.value=parseInt(age.value)" autocomplete="on">  
-		 	<fieldset>
-		    	
-		    	<legend>Personal information:</legend>
-		    	
-		    	First name:<br/>
-		    	<input type="text" name="firstname" value="Joan"><br/><br/>
-		    	
-		    	Last name:<br/>
-		    	<input type="text" name="lastname" value="Pedru"><br/><br/>
-			
-				Sex:<br/>
-		    	<input type="radio" name="sex" value="male" checked>Male
-  				<input type="radio" name="sex" value="female" checked>Female<br/><br/>
-  				
-  				State:<br/>
-		    	<select name="state">
-		    		<optgroup label="States">
-		    			<option value="Goa">Goa</option>
-		    		</optgroup>
-					
-					<optgroup label="Union Terrority">
-						<option value="Diu" selected="selected">Diu</option>
-				  		<option value="Daman">Daman</option>
-					</optgroup>
-				  	
-				</select><br/><br/>
-
-				Country:
-				<input list="country"><br/><br/>
-				
-				<datalist id="country">
-				    <option value="India">
-				    <option value="Malta">
-				    <option value="Nepal">
-				    <option value="Bhutan">
-				</datalist>
-
-				Tell me something:<br/>
-				<textarea name="message" rows="10" cols="30" value="message" >My Cat's name is Johnne.</textarea><br/><br/>
-
-				Age:
-				<input type="range"  id="age" name="age" value="50">
-	  			=
-  				<output name="x" for="age"></output>
-  				<br/><br/>
-
-				Encryption: <keygen name="security"><br/>
-
-				<button type="button" onclick="alert('Hello World!')">Click Me!</button>
-
-		    	<input type="submit" value="Submit">
-
-		  	</fieldset>
-		</form> 
-
+		<footer>
+			<p>	
+				Text Copied From Wikipedia.
+			</p>
+		</footer>
+		
 	</body>
 </html> 
 <!---->
