@@ -1,0 +1,120 @@
+<!--Multi-Media and Objects-->
+<!--http://www.w3schools.com-->
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- HTML5 Support for IE9 -->
+		<!--[if lt IE 9]>
+  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>HTML e9</title>
+		<meta charset="UTF-8" />
+		<meta name="author" content="FieldTraveller" />
+		<meta name="application-name" content="html_everything" />
+		<meta name="description" content="HTML Quick Reference" />
+		<meta name="keywords" content="HTML, Quick Reference" />
+
+		<style type="text/css">
+
+			img
+				{
+					width: 200px;
+					height: 200px;
+				}
+
+		</style>
+
+	</head>
+
+	<body>
+
+	<!--
+		<iframe src=""></iframe> IFrmae(web page within a web page)
+	-->
+	<iframe src="./html_everything_2.html" width="100%" height="600px" name="iframe_1"></iframe>
+	<!--Load a link in an iframe-->
+	<p><a href="./html_everything_1.html" target="iframe_1">This is where it began</a></p>
+
+	<!--
+		<img src=""> Image
+	-->
+	
+	<img src="./images/A1.jpg" alt="There should be an image here." > 
+	<img src="./images/1.gif" alt="Animated Gif 1" width="100" height="100"> <br/><br/>
+	
+	<!--
+		Style attribute is not overriden by css but width and height attribute are overriden
+		float attribute (aligh element)
+	-->
+	
+	<!-- HyperLinked Image -->
+	HyperLinked Image: <a href="./html_everything_4.html"><img src="./images/1.gif" alt="Click me" style="width:50px;height:50px"></a><br/>
+	<img src="./images/2.gif" alt="Animated Gif 2" width="500px" height="500px" style="float:right"> <br/><br/><br/><br/><br/>
+
+	<!--
+		<map></map> tag to define an image-map.
+		<area></area> Area  (defines an area inside an image-map)
+	-->
+	
+	Mapped Image:&nbsp;
+	<img src="./images/button.jpg" usemap="#buttonmap" style="width:289px;height:209px">
+
+	<map name="buttonmap">
+		<area shape="rect" coords="0,0,144,204" alt="html_everything_1" href="./html_everything_1.html#bookmark1">
+		<area shape="rect" coords="146,0,285,204" alt="html_everything_5" href="./html_everything_5.html">
+	</map>
+
+	<!--
+		<figure></figure> Figure
+		<figcaption></figcaption> Figure Caption
+	-->
+	<figure>
+  		<img src="./images/3.gif" alt="Animated Gif 2" style="width:400px;height:200px">
+  		<figcaption>Welcome to the Matrix.</figcaption>
+	</figure> <br/><br/>
+
+	<!-- 
+		<video></video> Video 
+		<source /> MultiMedia Source
+		controls Attribute (Video/Audio Controls)
+		autoplay Attribute
+		loop Attribute
+
+		<track> Track (to specify subtitles, caption files or other files containing text, that should be visible when the media is playing)
+ 	-->
+	Video: 
+	<video width="300" height="200" controls="controls" >
+  		<source src="./video/vid_1.mp4" type="video/mp4"/>
+  		Your browser does not support the video tag.
+	</video>
+
+	Audio:
+	<audio controls="controls" loop="loop">
+		<source src="./audio/music1.mp3" type="audio/mp3"/>
+		<source src="./audio/music2.mp3" type="audio/mp3"/>
+  		Your browser does not support the audeo tag.
+	</audio> <br/><br/>
+
+	<!-- 
+		<object></object> Object <object> (an embedded object(Flash,applet,html,image,etc) within an HTML document)
+		<embed> Embed (a container for an external application or interactive content (a plug-in))
+	-->
+
+	<object width="100%" height="500px" data="./html_everything_6.html" border="5px solid line"></object ><br/><br/>
+	
+	Scrible Here(Applet):&nbsp;&nbsp;
+	<object type="application/x-java-applet" height="300" width="550" border="5px solid line">
+	    <param name="code" value="picaso.class" />
+	    <param name="codebase" value="./applets/" />
+	    <param name="archive" value="picaso.jar" />
+	    Applet failed to run.  No Java plug-in was found.
+	</object><br/><br/>
+
+	<embed width="100%" height="500px" src="./images/3.gif" />
+
+	 <iframe width="420" height="315" src="http://www.youtube.com/embed/rmnSpUgOvyI"></iframe> 
+
+	</body>
+</html> 
+<!---->
+<!--End Of File-->

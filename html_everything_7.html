@@ -1,0 +1,153 @@
+<!-- Form -->
+<!--http://www.w3schools.com-->
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<!-- HTML5 Support for IE9 -->
+		<!--[if lt IE 9]>
+  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>HTML e7</title>
+		<meta charset="UTF-8" />
+		<meta name="author" content="FieldTraveller" />
+		<meta name="application-name" content="html_everything" />
+		<meta name="description" content="HTML Quick Reference" />
+		<meta name="keywords" content="HTML, Quick Reference" />
+	</head>
+	
+	<body>
+
+		<!--
+			<form></form> Form
+			action attribute (Specifies where to send the form-data when a form is submitted)
+			method attribute (Specifies the HTTP method to use when sending form-data )(Deflaut get)
+
+			<fieldset></fieldset> Field Set (group related elements in a form)
+			<legend></legend> Caption for the <fieldset></fieldset>
+
+			<input> Input (specifies an input field where the user can enter data)
+			type button 		attribute used to specify the type of input
+					checkbox
+					color
+					date
+					datetime
+					datetime-local
+					email
+					file
+					hidden
+					image
+					month
+					number
+					password
+					radio
+					range
+					reset
+					search
+					submit
+					tel
+					text
+					time
+					url
+					week 
+
+			Attribute 	Description
+			disabled 	Specifies that an input field should be disabled
+			max 		Specifies the maximum value for an input field
+			maxlength 	Specifies the maximum number of character for an input field
+			min 		Specifies the minimum value for an input field
+			pattern 	Specifies a regular expression to check the input value against
+			readonly 	Specifies that an input field is read only (cannot be changed)
+			required 	Specifies that an input field is required (must be filled out)
+			size 		Specifies the width (in characters) of an input field
+			step 		Specifies the legal number intervals for an input field
+			value 		Specifies the default value for an input field
+
+			<label></label> Label for an <input></input>
+			<datalist></datalist> Datalist (specifies a list of pre-defined options for an <input> element. Double Click to get a drop-down list of pre-defined options )
+			   
+			<select></select> Drop-down list
+			<option></option> Options to select.
+			<optgroup></optgroup> Option Group (Group related options in a drop-down list)
+
+			<textarea></textarea> Text Area (multi-line text input control)
+			<button></button> Button
+
+			<keygen> specifies a key-pair(RSA) generator field in a form.
+			When the form is submitted, two keys are generated, one private and one public.
+			The private key is stored locally, and the public key is sent to the server.
+			The public key could be used to generate a client certificate to authenticate the user in the future.
+
+			<output></output> Output (Used to display the result of a calculation )
+		-->
+
+		 <form action="action_page.php" oninput="x.value=parseInt(age.value)" autocomplete="on" >  
+		 	<fieldset>
+		    	
+		    	<legend>Personal information:</legend>
+		    	
+		    	First name:<br/>
+		    	<input type="text" name="firstname" value="Joan"><br/><br/>
+		    	
+		    	Last name:<br/>
+		    	<input type="text" name="lastname" value="Pedru"><br/><br/>
+			
+				Sex:<br/>
+		    	<input type="radio" name="sex" value="male" checked>Male
+  				<input type="radio" name="sex" value="female" checked>Female<br/><br/>
+  				
+  				State:<br/>
+		    	<select name="state">
+		    		<optgroup label="States">
+		    			<option value="Goa">Goa</option>
+		    		</optgroup>
+					
+					<optgroup label="Union Terrority">
+						<option value="Diu" selected="selected">Diu</option>
+				  		<option value="Daman">Daman</option>
+					</optgroup>
+				  	
+				</select><br/><br/>
+
+				Country:
+				<input list="country"><br/><br/>
+				
+				<datalist id="country">
+				    <option value="India">
+				    <option value="Malta">
+				    <option value="Nepal">
+				    <option value="Bhutan">
+				</datalist>
+
+				Tell me something:<br/>
+				<textarea name="message" rows="10" cols="30" value="message" >My Cat's name is Johnne.</textarea><br/><br/>
+
+				Age:
+				<input type="range"  id="age" name="age" value="50">
+	  			=
+  				<output name="x" for="age" >50</output>
+  				<br/><br/>
+
+  				Password:
+  				<input type="password" name="password"><br/><br/>
+
+  				<input type="checkbox" name="mad"> I'm Mad.<br/><br/>
+
+  				Enter a Number:
+  				<input type="number" name="somenumber" step="0.0001" min="1" max="5"><br/><br/>
+
+  				Your favorite color:
+  				<input type="color" name="favcolor"><br/><br/>
+
+				Encryption: <keygen name="security"><br/><br/>
+
+				<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+		    	<input type="submit" value="Submit">
+
+		  	</fieldset>
+		</form> 
+
+	</body>
+</html> 
+<!---->
+<!--End Of File-->
