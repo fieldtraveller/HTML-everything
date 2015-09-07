@@ -1,0 +1,69 @@
+/*	
+	Color description
+    "#ff0000" (HEX value)
+    "rgb(255,0,0)" (RGB value)
+    "red" (a color name)
+*/
+/*
+	background-color 		Sets the background color of an element
+
+	background-image 		Sets the background image for an element
+	background-repeat 		Sets how a background image will be repeated
+	background-attachment 	Sets whether a background image is fixed or scrolls with the rest of the page
+	background-position 	Sets the starting position of a background image
+*/
+
+body
+{
+	/*background-color:lightgreen;*/
+
+	background-image:url("../images/bg1.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+
+}
+
+header
+{
+}
+
+nav
+{
+}
+
+section
+{
+}
+
+article
+{
+}
+
+aside
+{
+}
+
+footer
+{
+}
+
+h1
+{
+}
+
+ul
+{
+}
+
+li
+{
+}
+
+p
+{
+}
+
+a
+{
+}

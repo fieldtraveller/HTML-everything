@@ -8,8 +8,22 @@ Styling can be added to HTML elements in 3 ways:
     Internal - using a <style> element in the HTML <head> section
     External - using one or more external CSS files
 	
-	element { property:value; property:value }
+(Selector) 	(declaration block)
+element 	{ property:value; property:value }
 
+When same property:value; is to be applied to different elements
+selector, selector,selector {property:value;} 
+
+No space between the property value and the unit(100px is correct, 100 px is wrong)
+
+Order in which the Style is defined is important. 
+If the same element has 2 or more style definitions(inline or internal or external), then the last style definition has higher priority over others.
+
+Priority List
+Inline style (inside an HTML element)(Highest)		
+External and internal style sheets(If the link to the external style sheet is placed below the internal style sheet <head></head>, the external style sheet will override the internal style sheet and vice versa)
+Browser default(Lowest)
+    
 -->
 <!--http://www.w3schools.com-->
 <!DOCTYPE html>

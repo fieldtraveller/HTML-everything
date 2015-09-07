@@ -1,4 +1,5 @@
-/*Comment With CSS/style*/
+/*Comment Within CSS/style*/
+should not contain any html tags
 a:link
 {
 	color:green; background-color:transparent; text-decoration:none
