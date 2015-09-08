@@ -12,7 +12,105 @@
 	background-attachment 	Sets whether a background image is fixed or scrolls with the rest of the page
 	background-position 	Sets the starting position of a background image
 */
+/*
+	color 			Sets the color of text
+	direction 		Specifies the text direction/writing direction
+	letter-spacing 	Increases or decreases the space between characters in a text
+	line-height 	Sets the line height
+	text-align 		Specifies the horizontal alignment of text(left,rigth,center,justify)
+	text-decoration Specifies the decoration added to text(none, overline,line-through, underline)
+	text-indent 	Specifies the indentation of the first line in a text-block (uppercase,lowercase,capitalize)
+	text-shadow 	Specifies the shadow effect added to text
+	text-transform 	Controls the capitalization of text
+	unicode-bidi 	Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document
+	vertical-align 	Sets the vertical alignment of an element
+	white-space 	Specifies how white-space inside an element is handled
+	word-spacing 	Increases or decreases the space between words in a text
+*/
+/*
+	font 			Sets all the font properties in one declaration
+	font-family 	Specifies the font family for text
+	font-size 		Specifies the font size of text
+	font-style 		Specifies the font style for text(normal,italic,oblique)
+	font-variant 	Specifies whether or not a text should be displayed in a small-caps font
+	font-weight 	Specifies the weight of a font(normal,bold,bolder,lighter,100,200,300,400(normal),500,600,700(Bold),800,900)
+*/
+/*
+	border 	Sets all the border properties in one declaration
+	border-bottom 	Sets all the bottom border properties in one declaration
+	border-bottom-color 	Sets the color of the bottom border
+	border-bottom-style 	Sets the style of the bottom border
+	border-bottom-width 	Sets the width of the bottom border
+	border-color 	Sets the color of the four borders
+	border-left 	Sets all the left border properties in one declaration
+	border-left-color 	Sets the color of the left border
+	border-left-style 	Sets the style of the left border
+	border-left-width 	Sets the width of the left border
+	border-right 	Sets all the right border properties in one declaration
+	border-right-color 	Sets the color of the right border
+	border-right-style 	Sets the style of the right border
+	border-right-width 	Sets the width of the right border
+	border-style 	Sets the style of the four borders
+	border-top 	Sets all the top border properties in one declaration
+	border-top-color 	Sets the color of the top border
+	border-top-style 	Sets the style of the top border
+	border-top-width 	Sets the width of the top border
+	border-width 	Sets the width of the four borders
+*/
+/*
+	An outline is a line that is drawn around elements (outside the borders) to make the element "stand out".
+	However, the outline property is different from the border property.The outline is not a part of an element's dimensions; the element's total width and height is not affected by the width of the outline.
+	
+	outline 		Sets all the outline properties in one declaration 	
+	outline-color 	Sets the color of an outline
+	outline-style 	Sets the style of an outline
+	outline-width 	Sets the width of an outline
+*/
+	
+/*	
+	margin clears an area around an element (outside the border). The margin does not have a background color, and is completely transparent.
 
+	margin 			A shorthand property for setting the margin properties in one declaration
+	margin-bottom 	Sets the bottom margin of an element
+	margin-left 	Sets the left margin of an element
+	margin-right 	Sets the right margin of an element
+	margin-top 		Sets the top margin of an element
+*/
+
+/*	
+	padding properties define the space between the element border and the element content
+
+	padding 		A shorthand property for setting all the padding properties in one declaration
+	padding-bottom 	Sets the bottom padding of an element
+	padding-left 	Sets the left padding of an element
+	padding-right 	Sets the right padding of an element
+	padding-top 	Sets the top padding of an element
+*/
+/*  
+    display property specifies if/how an element is displayed (block,inline,inline-block(combination of float(for the current block) and clear(for the folowing block)),none)(use none to make an element invicible, effects layout)
+	visibility property specifies whether or not an element is visible (hidden,visible)
+*/
+/*
+	position Specifies the type of positioning for an element(static(default),relative,fixed,absolute)
+	
+	top 	 Sets the top margin edge for a positioned box
+	bottom 	 Sets the bottom margin edge for a positioned box
+	right 	 Sets the right margin edge for a positioned box
+	left 	 Sets the left margin edge for a positioned box
+
+	clip 	 Clips an absolutely positioned element
+	cursor 	 Specifies the type of cursor to be displayed(url,auto,crosshair,default,pointer,move,e-resize,ne-resize,nw-resize,n-resize,se-resize,sw-resize,s-resize,w-resize,text,wait,help)
+	overflow Specifies what happens if content overflows an element's box
+
+	z-index  Sets the stack order of an element
+*/
+
+CSS Combinators
+	
+	element1 element2 (element 2 is a desendent of element 1)
+	element1 > element2 (element 2 is a direct(immediate) child of element 1)
+	element1 + element2 (element 2 is a adjacent sibling of element 1)
+	element1 ~ element2 (element 2 is a sibling of element 1)
 body
 {
 	/*background-color:lightgreen;*/
@@ -22,10 +120,72 @@ body
 	background-attachment:fixed;
 	background-position:center;
 
+	color: brown;
+	
+	direction: ltr;
+	unicode-bidi: bidi-override;/*yes*/
+	
+	text-decoration: none;
+	text-transform: none;
+	
+	text-align: justify;
+	text-indent: 0px;
+	
+	letter-spacing: normal;/*in px*/
+	line-height: 120%; /*wrt to character height*/
+	word-spacing: normal;
+	
+	vertical-align: baseline;
+
+	white-space:normal;
+
+	font-family: courier;
+	font-size: 1em;	/*(px/16)=em*/
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+
+	border-color: red;
+	border-width: 2px;
+	border-style: ridge;
+
+	outline-color: yellow;
+	outline-width: 2px;
+	outline-style: solid;
+
+	margin: 5px;
+
+	padding: 10px;
+
 }
 
+/*
+	height 		Sets the height of an element
+	min-height 	Sets the minimum height of an element
+	max-height 	Sets the maximum height of an element 
+	width:  	Sets the width of an element
+	min-width 	Sets the minimum width of an element
+	max-width 	Sets the maximum width of an element 
+*/
 header
 {
+	position:fixed;
+	/*z-index: -1;*/
+
+	cursor: crosshair;
+
+	/*text-shadow: 1px 1px white;*/
+	background-color: black;
+
+	height: 60px;
+	width: 500px;
+
+	outline: yellow solid 5px;
+}
+
+header h1
+{
+	
 }
 
 nav
@@ -42,6 +202,17 @@ article
 
 aside
 {
+	overflow: scroll;
+
+	height: 100px;
+	width: 900px;
+
+	outline: 2px solid red;
+
+	/*Hide element*/
+	/*display: none;*/
+
+	/*visibility: hidden;*/
 }
 
 footer
@@ -52,18 +223,88 @@ h1
 {
 }
 
+/*
+	list-style 			Sets all the properties for a list in one declaration
+	list-style-image 	Specifies an image as the list-item marker
+	list-style-position Specifies if the list-item markers should appear inside or outside the content flow
+	list-style-type 	Specifies the type of list-item marker
+*/
+
 ul
 {
+	/*Custom Bullet*/
+	list-style-image: url("../images/bullet_1.jpg");
+	
+	list-style-position: inside;
+	list-style-type: square; /*To be used if image not available*/
 }
 
 li
 {
+	/*Custom Bullet*/
+/*	
+	background-image: url("../images/bullet_1.jpg");
+	background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 15px;
+*/    
 }
 
 p
 {
 }
 
+/*
+	clear 	Specifies on which sides of an element where floating elements are not allowed to float
+	float 	Specifies whether or not an element should float
+*/
+
+p#p8
+{
+	/*clear: right;*/
+}
+
+figure
+{
+	float: right;
+}
+
+figcaption
+{
+	text-align: center;
+}
+
+img
+{
+	height: 200px;
+	width: 200px;
+}
+
 a
+{
+}
+
+/*
+	Link States
+		
+	    a:link - a normal, unvisited link
+	    a:visited - a link the user has visited
+	    a:hover - a link when the user mouses over it (a:hover MUST come after a:link and a:visited)
+        a:active - a link the moment it is clicked (a:active MUST come after a:hover)
+*/
+
+a:link
+{
+}
+				
+a:visited 
+{
+}
+				
+a:hover
+{
+}
+				
+a:active  
 {
 }
