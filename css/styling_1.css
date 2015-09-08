@@ -1,16 +1,36 @@
 /*	
 	Color description
-    "#ff0000" (HEX value)
-    "rgb(255,0,0)" (RGB value)
-    "red" (a color name)
+    #ff0000 (HEX value)
+    rgb(255,0,0) (RGB value)
+    rgba(255,0,0,1) (RGBA value)(A-Alpha)
+    red (a color name)
+    hsl  (hue, saturation, lightness)
+    hsla (hue, saturation, lightness, alpha)
+
+    opacity attribute (0-1)
 */
 /*
+	background 	A shorthand property for setting all the background properties in one declaration
+
 	background-color 		Sets the background color of an element
+
+	background-clip 	Specifies the painting area of the background							
+					    border-box - (default) the background is painted to the outside edge of the border
+					    padding-box - the background is painted to the outside edge of the padding
+					    content-box - the background is painted within the content box
+
+	background-origin 	Specifies where the background image(s) is/are positioned						
+					    border-box - the background image starts from the upper left corner of the border
+					    padding-box - (default) the background image starts from the upper left corner of the padding edge
+					    content-box - the background image starts from the upper left corner of the content
+
+	background-size 	Specifies the size of the background image(s)(cover,contain,px)
 
 	background-image 		Sets the background image for an element
 	background-repeat 		Sets how a background image will be repeated
 	background-attachment 	Sets whether a background image is fixed or scrolls with the rest of the page
 	background-position 	Sets the starting position of a background image
+	
 */
 /*
 	color 			Sets the color of text
@@ -26,6 +46,14 @@
 	vertical-align 	Sets the vertical alignment of an element
 	white-space 	Specifies how white-space inside an element is handled
 	word-spacing 	Increases or decreases the space between words in a text
+
+	text-align-last Specifies how to align the last line of a text
+	text-emphasis 	A shorthand for setting text-emphasis-style and text-emphasis-color in one declaration
+	text-justify 	Specifies how justified text should be aligned and spaced
+	text-overflow 	Specifies how overflowed content that is not displayed should be signaled to the user
+	word-break 		Specifies line breaking rules for non-CJK scripts
+	word-wrap 		Allows long words to be able to be broken and wrap onto the next line
+
 */
 /*
 	font 			Sets all the font properties in one declaration
@@ -105,12 +133,86 @@
 	z-index  Sets the stack order of an element
 */
 
-CSS Combinators
-	
-	element1 element2 (element 2 is a desendent of element 1)
-	element1 > element2 (element 2 is a direct(immediate) child of element 1)
-	element1 + element2 (element 2 is a adjacent sibling of element 1)
-	element1 ~ element2 (element 2 is a sibling of element 1)
+/*
+	CSS Combinators
+		
+		element1 element2 (element 2 is a desendent of element 1)
+		element1 > element2 (element 2 is a direct(immediate) child of element 1)
+		element1 + element2 (element 2 is a adjacent sibling of element 1)
+		element1 ~ element2 (element 2 is a sibling of element 1)
+*/
+/*	
+	CSS Selectors
+
+	CSS Pseudo Classes (element::pseudo_class)
+		:root (Refers to the html tag)
+
+		:active (when link is clicked)
+		:link (when link is not visited)
+		:visited (when link is visited)
+				
+		:enabled (when an input is enabled(default))
+		:disabled (when an input is disabled)
+		:optional (when field is optional)
+		:required (when field is required)
+		:checked (when checkbox is checked)
+		:in-range (when input is in range)
+		:out-of-range (when input is out of range)
+		:valid (when input is valid)
+		:invalid (when input is invalid)
+		:read-only (when input is read only)
+		:read-write (when input is read/write)
+
+		:empty (empty element)
+		
+		:first-child (First child of the element)
+		:last-child (last child of the element)
+		:first-of-type (First element of the type)
+		:last-of-type (last element of the type)
+		:nth-child(n) (nth child of the element)
+		:nth-last-child(n) (nth child of the element from the bottom)
+		:nth-of-type(n) (nth element of the type)
+		:nth-last-of-type(n) (nth element of the type from the bottom)
+		:only-of-type (only of the type)
+		:only-child (only child)
+
+		:focus (when element is in focus)
+		:hover (when cursor is over the element)
+		
+		:lang(language) (elements with a lang attribute as "language")
+		:not(selector) (selects every other element not "selector")
+		:target (When a particular internal bookmarked is clicked on)
+		
+	CSS Pseudo Elements (element::pseudo_element)
+		::after (after the element)
+		::before (before the element)
+		::first-letter (first letter of the element)
+		::first-line (first line of the element)
+		::selection (on selection by the user)
+
+	Attribute Selector (element[attibute])
+		[attribute] (elements with "attribute" specified)
+		[attribute=value] (elements for which "attribute=value")
+		[attribute~=value] (elements which has the word "value" in the "attribute" value)
+		[attribute|=value] (elements which has the word "value" at begin of the "attribute" value)
+		[attribute^=value] (elements which begin with "value" at begin of the "attribute" value)
+		[attribute$=value] (elements which end with "value" at begin of the "attribute" value)
+		[attribute*=value] (elements which have "value" anywhere in the "attribute" value)
+*/
+/*
+	border-radius 				A shorthand property for setting all the four border-*-*-radius properties
+	border-top-left-radius 		Defines the shape of the border of the top-left corner
+	border-top-right-radius 	Defines the shape of the border of the top-right corner
+	border-bottom-right-radius 	Defines the shape of the border of the bottom-right corner
+	border-bottom-left-radius 	Defines the shape of the border of the bottom-left corner
+
+	border-image 		A shorthand property for setting all the border-image-* properties
+	border-image-source Specifies the path to the image to be used as a border
+	border-image-slice 	Specifies how to slice the border image
+	border-image-width 	Specifies the widths of the border image
+	border-image-outset Specifies the amount by which the border image area extends beyond the border box
+	border-image-repeat Specifies whether the border image should be repeated, rounded or stretched
+*/
 body
 {
 	/*background-color:lightgreen;*/
@@ -120,6 +222,7 @@ body
 	background-attachment:fixed;
 	background-position:center;
 
+	/*background: #8AC007;*/
 	color: brown;
 	
 	direction: ltr;
@@ -145,9 +248,12 @@ body
 	font-weight: normal;
 	font-variant: normal;
 
-	border-color: red;
+	/*border-color: red;
 	border-width: 2px;
-	border-style: ridge;
+	border-style: ridge;*/
+
+	border: 10px solid transparent;
+	border-image: url("../images/border.png") 27 round;
 
 	outline-color: yellow;
 	outline-width: 2px;
@@ -169,18 +275,22 @@ body
 */
 header
 {
+	border-radius:50px;
+
 	position:fixed;
 	/*z-index: -1;*/
 
 	cursor: crosshair;
 
-	/*text-shadow: 1px 1px white;*/
+	text-shadow: 2px 2px 5px white;
 	background-color: black;
 
 	height: 60px;
-	width: 500px;
+	width: 520px;
 
-	outline: yellow solid 5px;
+	text-align: center;
+
+	/*outline: yellow solid 5px;*/
 }
 
 header h1
@@ -219,6 +329,71 @@ footer
 {
 }
 
+div
+{
+
+}
+
+div.div_gradient
+{
+	height: 100px;
+
+	border-width: 2px;
+	border-style: solid;
+	border-color: yellow;
+}
+/*
+	box-shadow 	Adds one or more shadows to an element
+*/
+/*
+	linear-gradient(color,color) (linear gradient)
+	repeating-linear-gradient(color,color) (repeating linear gradient)
+
+	radial-gradient(color,color) (radial gradient)
+	repeating-radial-gradient(color,color) (repeating radial gradient)
+*/
+div#div_1
+{
+	box-shadow:2px 3px 5px gold;
+
+	background: linear-gradient(red, blue); 
+}
+
+div#div_2
+{
+    background: linear-gradient(to right, red , blue);
+}
+
+div#div_3
+{
+ 	background: linear-gradient(-90deg, red , blue);  
+}
+
+div#div_4
+{
+ 	background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);   
+}
+
+div#div_5
+{
+  	background: linear-gradient(red 20%, orange 40%, yellow 60%, green 80%, blue 100%);     
+}
+
+div#div_6
+{
+	background: repeating-linear-gradient(red, yellow 10%, green 20%);    
+}
+
+div#div_7
+{
+ 	background: radial-gradient(blue,green,yellow,black);   
+}
+
+div#div_8
+{
+    
+}
+
 h1
 {
 }
@@ -252,6 +427,12 @@ li
 
 p
 {
+
+}
+
+article p
+{
+	text-indent: 50px;
 }
 
 /*
@@ -288,7 +469,7 @@ a
 	Link States
 		
 	    a:link - a normal, unvisited link
-	    a:visited - a link the user has visited
+	    a:visited - a link the user has visited 
 	    a:hover - a link when the user mouses over it (a:hover MUST come after a:link and a:visited)
         a:active - a link the moment it is clicked (a:active MUST come after a:hover)
 */
@@ -308,3 +489,4 @@ a:hover
 a:active  
 {
 }
+
