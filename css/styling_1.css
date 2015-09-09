@@ -607,18 +607,37 @@ p#p1
 	line-height: 150%;
 }
 
-p#p2
-{
-	column-count: 4;
-	column-span:3;
-	column-width:300px;
-	
-	column-gap: 10px;
-	column-rule-color: red;
-	column-rule-style: dotted;
-	column-rule-width: 2px;
-}
+/*
+	box-sizing 		Allows you to include the padding and border in an element's total width and height
+	nav-down 		Specifies where to navigate when using the arrow-down navigation key
+	nav-index 		Specifies the tabbing order for an element
+	nav-left 		Specifies where to navigate when using the arrow-left navigation key
+	nav-right 		Specifies where to navigate when using the arrow-right navigation key
+	nav-up 			Specifies where to navigate when using the arrow-up navigation key
+	outline-offset 	Adds space between an outline and the edge or border of an element
+	resize		 	Specifies whether or not an element is resizable by the user
+*/
 
+div.div_column
+{
+	/*Generic Tag not supported, have to use prefixed tags*/
+	-moz-column-count: 3; /* for Firefox, different for different browsers */
+
+	-moz-column-count: 4;
+	-moz-column-width: 300px;
+	
+	-moz-column-gap: 10px;
+	-moz-column-rule-color: red;
+	-moz-column-rule-style: dotted;
+	-moz-column-rule-width: 2px;
+
+	resize: both;
+    overflow: auto;
+
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+}
 
 /*
 	clear 	Specifies on which sides of an element where floating elements are not allowed to float
