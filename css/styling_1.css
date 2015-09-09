@@ -56,6 +56,18 @@
 
 */
 /*
+	column-count 		Specifies the number of columns an element should be divided into
+	column-fill 		Specifies how to fill columns
+	column-gap 			Specifies the gap between the columns
+	column-rule 		A shorthand property for setting all the column-rule-* properties
+	column-rule-color 	Specifies the color of the rule between columns
+	column-rule-style 	Specifies the style of the rule between columns
+	column-rule-width 	Specifies the width of the rule between columns
+	column-span 		Specifies how many columns an element should span across
+	column-width 		Specifies a suggested, optimal width for the columns
+	columns 			A shorthand property for setting column-width and column-count
+*/
+/*
 	font 			Sets all the font properties in one declaration
 	font-family 	Specifies the font family for text
 	font-size 		Specifies the font size of text
@@ -298,6 +310,7 @@ header h1
 	
 }
 
+
 nav
 {
 }
@@ -342,6 +355,7 @@ div.div_gradient
 	border-style: solid;
 	border-color: yellow;
 }
+
 /*
 	box-shadow 	Adds one or more shadows to an element
 */
@@ -352,6 +366,76 @@ div.div_gradient
 	radial-gradient(color,color) (radial gradient)
 	repeating-radial-gradient(color,color) (repeating radial gradient)
 */
+/*
+	transform 			Applies a 2D or 3D transformation to an element
+	transform-origin 	Allows you to change the position on transformed elements
+	transform-style 	Specifies how nested elements are rendered in 3D space
+	perspective 	Specifies the perspective on how 3D elements are viewed
+	perspective-origin 	Specifies the bottom position of 3D elements
+	backface-visibility 	Defines whether or not an element should be visible when not facing the screen
+
+	Function 				Description
+	matrix(n,n,n,n,n,n) 	Defines a 2D transformation, using a matrix of six values
+	translate(x,y) 			Defines a 2D translation, moving the element along the X- and the Y-axis
+	translateX(n) 			Defines a 2D translation, moving the element along the X-axis
+	translateY(n) 			Defines a 2D translation, moving the element along the Y-axis
+	scale(x,y) 				Defines a 2D scale transformation, changing the elements width and height
+	scaleX(n) 				Defines a 2D scale transformation, changing the element's width
+	scaleY(n) 				Defines a 2D scale transformation, changing the element's height
+	rotate(angle) 			Defines a 2D rotation, the angle is specified in the parameter
+	skew(x-angle,y-angle) 	Defines a 2D skew transformation along the X- and the Y-axis
+	skewX(angle) 			Defines a 2D skew transformation along the X-axis
+	skewY(angle) 			Defines a 2D skew transformation along the Y-axis
+
+
+	matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n) 	Defines a 3D transformation, using a 4x4 matrix of 16 values
+	translate3d(x,y,z) 							Defines a 3D translation
+	translateX(x) 								Defines a 3D translation, using only the value for the X-axis
+	translateY(y)							 	Defines a 3D translation, using only the value for the Y-axis
+	translateZ(z) 								Defines a 3D translation, using only the value for the Z-axis
+	scale3d(x,y,z) 								Defines a 3D scale transformation
+	scaleX(x) 									Defines a 3D scale transformation by giving a value for the X-axis
+	scaleY(y)								 	Defines a 3D scale transformation by giving a value for the Y-axis
+	scaleZ(z) 									Defines a 3D scale transformation by giving a value for the Z-axis
+	rotate3d(x,y,z,angle) 						Defines a 3D rotation
+	rotateX(angle) 								Defines a 3D rotation along the X-axis
+	rotateY(angle) 								Defines a 3D rotation along the Y-axis
+	rotateZ(angle) 								Defines a 3D rotation along the Z-axis
+	perspective(n) 								Defines a perspective view for a 3D transformed element
+
+
+	matrix(a,b,c,d,e,f)
+		a 	Scales the drawing horizontally
+		b 	Skew the the drawing horizontally
+		c 	Skew the the drawing vertically
+		d 	Scales the drawing vertically
+		e 	Moves the the drawing horizontally
+		f 	Moves the the drawing vertically
+
+	transition 					A shorthand property for setting the four transition properties into a single property
+	transition-delay 			Specifies a delay (in seconds) for the transition effect
+	transition-duration 		Specifies how many seconds or milliseconds a transition effect takes to complete
+	transition-property 		Specifies the name of the CSS property the transition effect is for
+	transition-timing-function 	Specifies the speed curve of the transition effect		
+    	ease					specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+    	linear 					specifies a transition effect with the same speed from start to end
+	    ease-in 				specifies a transition effect with a slow start
+	    ease-out 				specifies a transition effect with a slow end
+	    ease-in-out 			specifies a transition effect with a slow start and end
+	    cubic-bezier(n,n,n,n) 	lets you define your own values in a cubic-bezier function
+*/
+/*
+	@keyframes 					Specifies the animation code
+	animation 					A shorthand property for setting all the animation properties (except animation-play-state and animation-fill-mode)
+	animation-delay 			Specifies a delay for the start of an animation
+	animation-direction 		Specifies whether an animation should play in reverse direction or alternate cycles
+	animation-duration 			Specifies how many seconds or milliseconds an animation takes to complete one cycle
+	animation-fill-mode 		Specifies a style for the element when the animation is not playing (when it is finished, or when it has a delay)
+	animation-iteration-count 	Specifies the number of times an animation should be played
+	animation-name 				Specifies the name of the @keyframes animation
+	animation-play-state 		Specifies whether the animation is running or paused
+	animation-timing-function 	Specifies the speed curve of the animation
+*/
 div#div_1
 {
 	box-shadow:2px 3px 5px gold;
@@ -359,9 +443,19 @@ div#div_1
 	background: linear-gradient(red, blue); 
 }
 
+div#div_1:hover
+{
+	transform: translate(10px,10px);
+}
+
 div#div_2
 {
     background: linear-gradient(to right, red , blue);
+}
+
+div#div_2:hover
+{
+	transform: rotate(20deg);
 }
 
 div#div_3
@@ -369,29 +463,91 @@ div#div_3
  	background: linear-gradient(-90deg, red , blue);  
 }
 
+div#div_3:hover
+{
+	transform: scale(0.5,0.5);;
+}
+
 div#div_4
 {
  	background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);   
 }
 
+div#div_4:hover
+{
+	transform: skewX(20deg);
+	/*transform: skewY(20deg);*/
+}
+
 div#div_5
 {
-  	background: linear-gradient(red 20%, orange 40%, yellow 60%, green 80%, blue 100%);     
+  	background: linear-gradient(red 20%, orange 40%, yellow 60%, green 80%, blue 100%);  
+
+    transition: width 2s, transform 2s;
+
+    width: 50%;
+}
+
+div#div_5:hover
+{
+	width: 100%;
+	transform: rotate(180deg);
 }
 
 div#div_6
 {
 	background: repeating-linear-gradient(red, yellow 10%, green 20%);    
+
+	width: 100%;
+	/*transition: width 2s transform:2s;*/
+
+	transition-property: width,transform;
+	transition-duration: 2s; 
+    transition-timing-function: linear;
+    transition-delay: 0s;
+
+}
+
+div#div_6:hover
+{
+	width: 200px;
+	transform: skewX(60deg);
 }
 
 div#div_7
 {
- 	background: radial-gradient(blue,green,yellow,black);   
+	width: 100px;
+	
+ 	background: radial-gradient(blue,green,yellow,black);
+}
+
+@keyframes animation_1 
+{
+    0%   {background-color: red; width: 75px;height: 75px;transform: rotate(180deg);}
+    25%  {background-color: yellow; width: 50px;height: 50px;}
+    50%  {background-color: blue; width: 25px;height: 25px;}
+    75%  {background-color: green; width: 50px;height: 50px;}
+    100% {background-color: red; width: 75px;height: 75px;}
+}
+
+div.div_animation_container
+{	
+	width: 100px;
+	height: 100px;
 }
 
 div#div_8
 {
-    
+	width: 100px;
+	height: 100px;
+
+	animation-name: animation_1;
+ 	
+ 	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
 }
 
 h1
@@ -434,6 +590,35 @@ article p
 {
 	text-indent: 50px;
 }
+
+/*
+	Adding custom font using "@font-face" rule
+*/
+@font-face 
+{
+    font-family: SonOfTime;
+    src: url("../fonts/son_of_time/SonOfTime.ttf");
+}
+
+p#p1
+{
+	font-family: SonOfTime;
+	font-size: 150%;
+	line-height: 150%;
+}
+
+p#p2
+{
+	column-count: 4;
+	column-span:3;
+	column-width:300px;
+	
+	column-gap: 10px;
+	column-rule-color: red;
+	column-rule-style: dotted;
+	column-rule-width: 2px;
+}
+
 
 /*
 	clear 	Specifies on which sides of an element where floating elements are not allowed to float
