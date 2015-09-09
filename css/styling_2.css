@@ -1,0 +1,262 @@
+html
+{
+	background-image:url("../images/colors.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-size: cover;
+}
+
+body
+{
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.row::after 
+{
+    content: "";
+    clear: both;
+
+    display: block;
+}
+
+.col-1 
+{
+	width: 8.33%;
+}
+
+.col-2 
+{
+	width: 16.66%;
+}
+
+.col-3 
+{
+	width: 25%;
+}
+
+.col-4
+{
+	width: 33.33%;
+}
+
+.col-5 
+{
+	width: 41.66%;
+}
+
+.col-6 
+{
+	width: 50%;
+}
+
+.col-7 
+{
+	width: 58.33%;
+}
+
+.col-8 
+{
+	width: 66.66%;
+}
+
+.col-9 
+{
+	width: 75%;
+}
+
+.col-10 
+{
+	width: 83.33%;
+}
+
+.col-11 
+{
+	width: 91.66%;
+}
+
+.col-12 
+{
+	width: 100%;
+}
+
+[class*="col-"] 
+{
+    float: left;
+
+    display: block;
+
+    padding: 15px;
+}
+
+header
+{
+	/*padding-top: 0px;*/
+
+	background-color: #7AC948;
+	color: white;
+
+	width: 100%;
+	/*height: 80px;*/
+
+	text-align: center;
+	font-size: 2em;
+	font-family: "sherif";
+}
+
+nav
+{
+}
+
+section
+{
+	text-align: justify;
+
+	/*background-color: white;
+	opacity: 0.6;*/
+	background-color: rgba(255,255,225,0.6);
+
+	margin-top: 30px;
+}
+
+section:hover
+{
+	/*opacity: 0.8;*/
+	background-color: rgba(255,255,225,0.8);
+}
+
+article
+{
+}
+
+aside
+{
+	background-color: rgba(255,255,225,0.6);
+}
+
+aside:hover
+{
+	background-color: rgba(255,255,225,0.8);
+}
+
+footer
+{
+	text-align: center;
+}
+
+h1
+{
+
+}
+
+header h1
+{
+	margin-top: 0;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+
+	clear: both;
+}
+
+aside h3
+{
+	margin: 0px;
+}
+
+ul
+{
+	padding-left: 0px;
+}
+
+li
+{
+	padding: 8px;
+    margin-bottom: 7px;
+
+	background-color: #FFA91E;/*#33AA7C;*/
+	color: white;
+
+	list-style-type: none;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+li:hover
+{
+	background-color:#1FCED8;
+}
+
+p
+{
+}
+
+aside p
+{
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+
+	text-align: justify;
+	
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;"
+}
+
+footer p
+{
+	margin-right: auto;
+	margin-left: auto;
+
+	text-align: center;
+
+	background-color: rgba(255,255,225,0.6);
+}
+
+footer p:hover
+{
+	background-color: rgba(255,255,225,0.8);
+}
+
+footer p#links
+{
+
+	width: 250px;
+}
+
+footer p#owner
+{
+	width: 90px;
+}
+
+div
+{
+
+}
+
+figure
+{
+	float: right;
+
+	margin-bottom: 15px;
+}
+
+figcaption
+{
+	text-align: center;
+}
+
+img
+{
+	height: 200px;
+	width: 200px;
+}
+
+a
+{
+}
+
+
