@@ -118,15 +118,15 @@ section
 
 	/*background-color: white;
 	opacity: 0.6;*/
-	background-color: rgba(255,255,225,0.6);
+
+	background-color: rgba(255,255,255,0.6);
 
 	margin-top: 30px;
 }
 
 section:hover
 {
-	/*opacity: 0.8;*/
-	background-color: rgba(255,255,225,0.8);
+	background-color: rgba(255,255,255,0.8);
 }
 
 article
@@ -135,12 +135,12 @@ article
 
 aside
 {
-	background-color: rgba(255,255,225,0.6);
+	background-color: rgba(255,255,255,0.6);
 }
 
 aside:hover
 {
-	background-color: rgba(255,255,225,0.8);
+	background-color: rgba(255,255,255,0.8);
 }
 
 footer
@@ -162,7 +162,7 @@ header h1
 	clear: both;
 }
 
-aside h3
+aside h2
 {
 	margin: 0px;
 }
@@ -206,28 +206,30 @@ aside p
 	padding-bottom: 15px;"
 }
 
-footer p
+footer div
 {
 	margin-right: auto;
 	margin-left: auto;
 
+	margin-top: 2px;
+	margin-bottom: 2px;
+
 	text-align: center;
 
-	background-color: rgba(255,255,225,0.6);
+	background-color: rgba(255,255,255,0.6);
 }
 
-footer p:hover
+footer div:hover
 {
-	background-color: rgba(255,255,225,0.8);
+	background-color: rgba(255,255,255,0.8);
 }
 
-footer p#links
+footer div#links
 {
-
 	width: 250px;
 }
 
-footer p#owner
+footer div#owner
 {
 	width: 90px;
 }
