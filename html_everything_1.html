@@ -1,36 +1,47 @@
-<!--Comment-->
-<!--Hyper Text Markup Language-->
-<!--http://www.w3schools.com-->
-<!--
-	
-	HTML Element: <tagname attribute_name=attribute_value>Text</tagname>
-	There can be more then 1 attributes.
-	attribute_value to be enclosed in double qoutes "" (or single quotes-use it when the attribute_value contains "" or vice versa) if the value includes a white space.
-	Tags can be nested within other tags.
-	Any number of white spaces are counted as only one white space.
-	
-	Every HTML element has a default style (background color is white and text color is black).
--->
-
-<!--Always start by specifying the type of document for a markup language-->
 <!DOCTYPE html>
-<!--
-	<html></html> HTML (Document Described with in it)
-	lang Attribute Document language (en-US : US English)
--->
 <html lang="en-US">
-	<!--
-		<head></head> Head (Title, Styles and meta data of the page decribed here) 
-	-->
 	<head>
-		<!-- HTML5 Support for IE9 -->
+		<meta charset="UTF-8" />
+		<meta name="author" content="FieldTraveller" />
+		<meta name="application-name" content="html_everything" />
+		<meta name="description" content="HTML Quick Reference" />
+		<meta name="keywords" content="HTML, Quick Reference" />
+
+		<title>HTML e1</title>
+		<!--Hyper Text Markup Language-->
+		<!--
+			
+			HTML Element: <tagname attribute_name=attribute_value>Text</tagname>
+			There can be more then 1 attributes.
+			attribute_value to be enclosed in double qoutes "" (or single quotes-use it when the attribute_value contains "" or vice versa) if the value includes a white space.
+			Tags can be nested within other tags.
+			Any number of white spaces are counted as only one white space.
+			
+			Every HTML element has a default style (background color is white and text color is black).
+		-->
+		<!--
+			Single or Multi Line Comment
+		-->
+
+		<!--Always start by specifying the type of document for a markup language <!DOCTYPE html> -->
+		
+		<!--
+			<html></html> HTML (Document Described with in it)
+			lang Attribute Document language (en-US : US English)
+		-->
+		<!--
+			<head></head> Head (Title, Styles and meta data of the page decribed here) 
+		-->
+		
+		<!-- HTML5 Support for IE -->
 		<!--[if lt IE 9]>
   			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		
 		<!--
 			<title></title> Title of page (Displayed in the browser tab, as bookmark name and in browser history)
 		-->
-		<title>HTML e1</title>
+		
 		<!--
 			<meta> Meta data
 			charset attribute character encoding for the document(Default Value: UTF-8)
@@ -55,12 +66,7 @@
 			<base> base URL and base target for all relative URLs in a page
 			<base href="base URL" target="_blank">
 		-->
-		<meta charset="UTF-8" />
-		<meta name="author" content="FieldTraveller" />
-		<meta name="application-name" content="html_everything" />
-		<meta name="description" content="HTML Quick Reference" />
-		<meta name="keywords" content="HTML, Quick Reference" />
-
+	
 		<!--Refresh Page every 30 seconds-->
 		<!--
 		<meta http-equiv="refresh" content="30">
@@ -90,9 +96,9 @@
 		<!--
 			<p></p> Paragraph
 		-->
-		<p>Paragraph 1. ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789/*-+.!@#$%^&*()_+={}[];':"/?,<></p>
+		<p>Paragraph 1. ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789/*-+.!@#$%^&amp;*()_+={}[];':"/?,&lt;&gt;</p>
 		<!--title attribue (If you move the mouse over the paragraph, the title will be displayed as a tooltip)-->
-		<p title="Paragraph 2"> ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789/*-+.!@#$%^&*()_+={}[];':"/?,<></p>
+		<p title="Paragraph 2"> ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789/*-+.!@#$%^&amp;*()_+={}[];':"/?,&lt;&gt;</p>
 		
 		<!-- 
 			<br> Line Break

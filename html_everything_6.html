@@ -1,19 +1,21 @@
-<!--HTML Semantic Layout using dedicated tags-->
-<!--http://www.w3schools.com-->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<!-- HTML5 Support for IE9 -->
-		<!--[if lt IE 9]>
-  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<title>HTML e6</title>
 		<meta charset="UTF-8" />
 		<meta name="author" content="FieldTraveller" />
 		<meta name="application-name" content="html_everything" />
 		<meta name="description" content="HTML Quick Reference" />
 		<meta name="keywords" content="HTML, Quick Reference" />
-
+		
+		<title>HTML e6</title>
+		
+		<!--HTML Semantic Layout using dedicated tags-->
+		
+		<!-- HTML5 Support for IE -->
+		<!--[if lt IE 9]>
+  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
 		<style>
 		 	body
 		 	{
@@ -34,8 +36,10 @@
 			{
 			    line-height:30px;
 			    background-color:#eeeeee;
-			    height:80%;
+
+			    height:100%;
 			    width:16%;
+			    
 			    float:left;
 			    padding:5px;
 
@@ -47,6 +51,14 @@
 			    float:left;
 			    padding:10px;
 
+			}
+
+			aside
+			{
+				background-color:lightgreen;
+			    color:black;
+			    clear:both;	
+			    text-align:center;
 			}
 				
 			footer 
@@ -86,19 +98,25 @@
 		</nav>
 
 		<section>
+			
+			<h2>Information about Goa.</h2>
+			
 			<article>
+
+				<h3>This is about Goa.</h3>
 				<p>
 					Goa is a state located in the western region of India, it is bounded by the state of Maharashtra to the north, and by Karnataka to the east and south, while the Arabian Sea forms its western coast. It is India's smallest state by area and the fourth smallest by population. Goa is one of India's richest sstates with a GDP per capita two and a half times that of the country as a whole. 
 				</p>
 			</article>
 
-			<aside>
-				<p>
-					India is a very Large Country.
-				</p>
-			</aside>
-
 		</section>
+
+		<aside>
+			<p>
+				India is a very Large Country.
+			</p>
+		</aside>
+
 
 		<footer>
 			<p>	

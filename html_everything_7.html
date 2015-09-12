@@ -1,18 +1,21 @@
-<!-- Form -->
-<!--http://www.w3schools.com-->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<!-- HTML5 Support for IE9 -->
-		<!--[if lt IE 9]>
-  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<title>HTML e7</title>
 		<meta charset="UTF-8" />
 		<meta name="author" content="FieldTraveller" />
 		<meta name="application-name" content="html_everything" />
 		<meta name="description" content="HTML Quick Reference" />
 		<meta name="keywords" content="HTML, Quick Reference" />
+
+		<title>HTML e7</title>
+		
+		<!-- Form -->
+
+		<!-- HTML5 Support for IE -->
+		<!--[if lt IE 9]>
+  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
 	</head>
 	
 	<body>
@@ -112,14 +115,14 @@
 				<input list="country"><br/><br/>
 				
 				<datalist id="country">
-				    <option value="India">
-				    <option value="Malta">
-				    <option value="Nepal">
-				    <option value="Bhutan">
+				    <option value="India">India</option>
+				    <option value="Malta">Malta</option>
+				    <option value="Nepal">Nepal</option>
+				    <option value="Bhutan">Bhutan</option>
 				</datalist>
 
 				Tell me something:<br/>
-				<textarea name="message" rows="10" cols="30" value="message" >My Cat's name is Johnne.</textarea><br/><br/>
+				<textarea name="message" rows="10" cols="30" >My Cat's name is Johnne.</textarea><br/><br/>
 
 				Age:
 				<input type="range"  id="age" name="age" value="50">
@@ -141,6 +144,7 @@
 				Encryption: <keygen name="security"><br/><br/>
 
 				<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+				<button type="reset" onclick="alert('Form Resetted')">Reset</button>
 
 		    	<input type="submit" value="Submit">
 

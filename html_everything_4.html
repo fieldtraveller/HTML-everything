@@ -1,18 +1,21 @@
-<!-- Tables and List -->
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>
-		<!-- HTML5 Support for IE9 -->
-		<!--[if lt IE 9]>
-  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<title>HTML e4</title>
 		<meta charset="UTF-8" />
 		<meta name="author" content="FieldTraveller" />
 		<meta name="application-name" content="html_everything" />
 		<meta name="description" content="HTML Quick Reference" />
 		<meta name="keywords" content="HTML, Quick Reference" />
-
+		
+		<title>HTML e4</title>
+		
+		<!-- Tables and List -->
+		
+		<!-- HTML5 Support for IE -->
+		<!--[if lt IE 9]>
+  			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
 		<style type="text/css">
 			table, th, td 
 				{
@@ -37,6 +40,7 @@
 
 	</head>
 
+	<body>
 		<!--
 			<table></table> Table
 			<th></th> Header cell in a table
@@ -47,7 +51,7 @@
 			<tbody></tbody> Body (Groups the body content in a table)
 			<tfoot></tfoot> Footer (Groups the footer content in a table )
 
-			<colgroup></colgroup> Column Group (Group of one or more columns in a table for formatting)
+			<colgroup></colgroup> Column Group (Group of one or more columns in a table for formatting) (Must account for all columns)
 			The <colgroup> tag must be a child of a <table> element, after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.
 			<col> 	Specifies column properties for each column within a <colgroup> element
 			span attribute 	(Specifies the number of columns a column group should span)
@@ -62,6 +66,7 @@
 			<colgroup>
 			    <col span="2" style="background-color:lightblue" />
 			    <col style="background-color:yellow" />
+			    <col />
 		  	</colgroup>
 
 		  	<thead>
@@ -70,7 +75,7 @@
 				    <th>Firstname</th>
 				    <th>Lastname</th>
 				    <th>Age</th>
-			  	</tr>
+				</tr>
 		  	</thead>
 
 		  	<tbody>
@@ -146,8 +151,6 @@
 			<dt>Hydrochloric Acid</dt>
 				<dd>Hydrogen + Chlorine</dd>
 		</dl><br/>
-
-	<body>
 
 	</body>
 </html> 
